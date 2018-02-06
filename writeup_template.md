@@ -16,22 +16,14 @@ The steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[image1]: ./extras/graph.jpg "Visualization"
+[image2]: ./extras/grid.jpg "Grayscaling"
+[image3]: ./extras/normalization.jpg "Random Noise"
+[image4]: ./extras/skew.jpg "Traffic Sign 1"
+[image5]: ./extras/skew2.jpg "Traffic Sign 2"
 
 ## Rubric Points
 ###Dataset Exploration
-I created a bar chart showing the number of images in every class. The data is far from being uniformly distributed, as seen in [image1].
-I also created a grid that shows an example image of each class, in order to make the following steps easier to follow. See [image2].
-###Design and Model Architecture
-
-
-My Model remained largly the same as LeNet. I explored with adding convolutional layers and fully-connected layers, changing the sizes of all the hidden layers, changing the non-linearity functions, and experimenting with dropout. However, nothing seemed to give me a significant improvement on my validation dataset.
-
-As for training, I kept the Adam optimizer, but I experimented with a couple of different ones. I also experimented with different batch sizes and epochs, where I ended up bumping the batch size to 256, decreasing the learning rate to 0.0002, and keeping the number of epochs the same, since I augmented a bunch of data to my training dataset (as I'll describe later).  
 
 ---
 ### Writeup / README
@@ -77,6 +69,8 @@ In order to account for different angles at which the picture of the traffic sig
 ![alt text][image4]
 
 ![alt text][image5]
+
+Note: The code for the image transformation logic came from this [source](https://github.com/vxy10/ImageAugmentation).
 
 Now the training set got blown up in size to 765578 (10 randomly skewed images for each normalized and non-normalized image).
 
