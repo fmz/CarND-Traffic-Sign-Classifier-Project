@@ -16,11 +16,11 @@ The steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./extras/graph.jpg "Visualization"
-[image2]: ./extras/grid.jpg "Dataset"
-[image3]: ./extras/normalization.jpg "Image Normalization"
-[image4]: ./extras/skew.jpg "Skew1"
-[image5]: ./extras/skew2.jpg "Skew2"
+[image1]: ./extras/Graph.JPG "Visualization"
+[image2]: ./extras/Grid.JPG "Dataset"
+[image3]: ./extras/Normalization.JPG "Image Normalization"
+[image4]: ./extras/Skew.JPG "Skew1"
+[image5]: ./extras/Skew2.JPG "Skew2"
 [image6]: ./extras/transformation.png "Image Transformation"
 
 ## Rubric Points
@@ -133,7 +133,7 @@ Here are five German traffic signs that I found while roaming the streets of Fra
 <img src="./extras/traffic/30.jpg" height="200" width="200">
 <img src="./extras/traffic/NoEntry.jpg" height="200" width="200">
 <img src="./extras/traffic/PriorityRoad.jpg" height="200" width="200">
-<img src="./extras/traffic/RightOfWay.jpg" height="200" width="200">
+<img src="./extras/traffic/RightOfWay.JPG" height="200" width="200">
 <img src="./extras/traffic/Stop.jpg" height="200" width="200">
 
 I chose these images to be blurry (I took them from a distance), and some of them, have awkward margins (like the no entry sign), and also distortions from being taken from an awkward angle (see the right-of-way sign) (for which the augmentations mentioned earlier helped quite a lot).
